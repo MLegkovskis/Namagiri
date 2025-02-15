@@ -131,7 +131,7 @@ if prompt := st.chat_input("Type your message here..."):
     
     # If the agent indicates the Sobol tool should be used:
     if tool_decision and "tool" in tool_decision and tool_decision["tool"] == "perform_sobol_analysis":
-        sobol_samples = tool_decision.get("sobol_samples", 1000)
+        sobol_samples = tool_decision.get("sobol_samples", 10000)
         tools = [
             {
                 "type": "function",
