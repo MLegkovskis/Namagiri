@@ -32,7 +32,7 @@ graph TD
 
     subgraph "Backend Logic (chat-to-model.py)"
         B --> C{Detects 'sobol' keyword}
-        C --> D[Call perform_sobol_analysis]
+        C --> D[Call Sobol Analysis Function]
     end
 
     subgraph "Analysis Engine (analysis_tools/sobol.py)"
