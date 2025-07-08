@@ -1,4 +1,8 @@
-# Namagiri: Conversational Sensitivity Analysis
+# **Namagiri: Conversational Sensitivity Analysis**
+
+[](https://www.python.org/downloads/)
+[](https://opensource.org/licenses/MIT)
+[](https://streamlit.io)
 
 **Namagiri** is an interactive web application that uses a Large Language Model (LLM) as a conversational interface to perform complex **Sobol Sensitivity Analysis** on computational models.
 
@@ -27,7 +31,7 @@ graph TD
     end
 
     subgraph "Backend Logic (chat-to-model.py)"
-        B --> C{Detects "sobol" keyword}
+        B --> C{Detects 'sobol' keyword}
         C --> D[Call perform_sobol_analysis()]
     end
 
@@ -54,22 +58,22 @@ graph TD
 
 | Component | Technology | Description |
 | :--- | :--- |:---|
-| **Web Framework** |  | For creating the interactive user interface. |
-| **LLM Service** |  | Provides fast LLM inference via API. |
-| **UQ & Stats** |  | The core engine for Sobol sensitivity analysis. |
-| **Data Handling**|  /  | For numerical operations and data structuring. |
-| **Plotting**|  | To create the Sobol index bar and radial plots. |
+| **Web Framework** |  **Streamlit** | For creating the interactive user interface. |
+| **LLM Service** |  **Groq** | Provides fast LLM inference via API. |
+| **UQ & Stats** |  **OpenTURNS** | The core engine for Sobol sensitivity analysis. |
+| **Data Handling** |  **NumPy** /  **Pandas** | For numerical operations and data structuring. |
+| **Plotting** |  **Matplotlib** | To create the Sobol index bar and radial plots. |
 
 -----
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### \#\#\# Prerequisites
 
   * Python 3.9+
   * A Groq API Key
 
-### Installation & Setup
+### \#\#\# Installation & Setup
 
 1.  **Clone the repository:**
     ```sh
@@ -101,7 +105,7 @@ graph TD
     ```
     The application will load this key automatically.
 
-### Running the Application
+### \#\#\# Running the Application
 
 Launch the Streamlit app with the following command:
 
