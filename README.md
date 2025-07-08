@@ -37,8 +37,8 @@ graph TD
 
     subgraph "Analysis Engine (analysis_tools/sobol.py)"
         D --> E[Execute model code & run OpenTURNS analysis]
-        E --> F[Generate Sobol indices (S1, ST, S2)]
-        F --> G[Generate Plots (Bar & Radial)]
+        E --> F[Generate Sobol indices S1, ST, S2]
+        F --> G[Generate Plots Bar & Radial]
     end
 
     subgraph "LLM Interpretation"
