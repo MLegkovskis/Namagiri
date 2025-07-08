@@ -23,7 +23,7 @@ The application follows a sophisticated workflow that goes beyond a simple chat-
 ```mermaid
 graph TD
     subgraph "Streamlit UI"
-        A[User selects/edits a model code] --> B[User asks: "run sobol analysis"]
+        A[User selects/edits a model code] --> B[User asks: 'run sobol analysis']
     end
 
     subgraph "Backend Logic (chat-to-model.py)"
